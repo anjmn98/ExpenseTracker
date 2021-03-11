@@ -11,7 +11,7 @@ import com.springboot.expensetrackerapi.model.User;
 import com.springboot.expensetrackerapi.repository.UserRepository;
 
 @Service
-@Transactional	//on adding this annotation, the transaction commit will be successful only when method executes succesfully
+@Transactional	
 public class UserServiceImpl implements UserService{
 
 	

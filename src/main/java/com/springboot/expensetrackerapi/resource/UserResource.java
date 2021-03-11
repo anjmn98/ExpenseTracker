@@ -45,7 +45,7 @@ public class UserResource {
 	}
 	
 	public Map<String, String> generateJWTToken(User user){
-		long timestamp = System.currentTimeMillis();	//for setting issue date for token and the expiry time
+		long timestamp = System.currentTimeMillis();	
 		String token = Jwts.builder().signWith(SignatureAlgorithm.HS256, Constants.API_SECRET_KEY)
 				.setIssuedAt(new Date(timestamp))
 				.setExpiration(new Date(timestamp + Constants.TOKEN_VALIDITY))
